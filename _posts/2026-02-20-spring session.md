@@ -46,13 +46,13 @@ server:
 # 启动流程
 配置类：
 
-![画板](https://cdn.nlark.com/yuque/0/2023/jpeg/22011769/1676259244117-e42c8ae8-3b54-4f87-a2f4-c661f0e836b6.jpeg)
+![画板](/assets/images/1676259244117-e42c8ae8-3b54-4f87-a2f4-c661f0e836b6.jpeg)
 
 + SessionConfigurationImportSelector：根据web容器的类型是servlet或reactive动态引入session存储仓库的配置类，默认会引入redis、jdbc、mongodb、none的存储仓库
 + SpringBootRedisHttpSessionConfiguration：会使用配置文件对应的ServerProperties和SessionProperties中的配置，创建web过滤器和redis session存储仓库的bean
 
 # 会话处理逻辑
-![画板](https://cdn.nlark.com/yuque/0/2023/jpeg/22011769/1676288075129-6daf1a55-9b87-4fd5-a998-f1cab69ecdd2.jpeg)
+![画板](/assets/images/1676288075129-6daf1a55-9b87-4fd5-a998-f1cab69ecdd2.jpeg)
 
 web过滤器SessionRepositoryFilter拦截请求执行，将原始请求包装成SessionRepositoryRequestWrapper，从而实现自定义创建会话方法getSession，过滤器执行结束或者响应提交时，执行commitSession
 
