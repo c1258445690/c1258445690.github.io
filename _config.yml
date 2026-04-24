@@ -98,9 +98,6 @@ defaults:
       share: true
       related: true
       show_date: true
-      toc: true
-      toc_label: "目录"
-      toc_icon: "cog"
   # _pages
   - scope:
       path: "_pages"
