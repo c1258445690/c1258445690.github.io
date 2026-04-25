@@ -11,7 +11,7 @@ tocbot.init({
   collapseDepth: 2,
   scrollSmooth: true,
   headingsOffset: 80,
-  scrollSmoothOffset: -80
+  scrollSmoothOffset: -20
 });
 const topBtn = document.getElementById('topBtn');
 
