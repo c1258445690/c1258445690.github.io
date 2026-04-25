@@ -42,6 +42,12 @@ layout: default
         <aside class="sidebar__right">
           <nav class="toc"></nav>
         </aside>
+        <div class="back-to-top" id="topBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </div>
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
